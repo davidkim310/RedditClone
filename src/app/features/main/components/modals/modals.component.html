@@ -1,0 +1,20 @@
+<h2 mat-dialog-title>Comments</h2>
+
+<mat-dialog-content>
+    <table *ngIf="comments.length > 0" mat-table [dataSource]="comments" class="mat-elevation-z8 tableStyle">
+        <ng-container matColumnDef="author">
+            <th mat-header-cell *matHeaderCellDef> Author </th>
+            <td class="itemAuthor" mat-cell *matCellDef="let element"> {{element.author}}: </td>
+        </ng-container>
+        <ng-container matColumnDef="body">
+            <th mat-header-cell *matHeaderCellDef> Comment </th>
+            <td class="itemBody" mat-cell *matCellDef="let element"> {{element.body}} </td>
+        </ng-container>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
+    <h2 *ngIf="comments.length === 0">No Comments</h2>
+</mat-dialog-content>
+
+<mat-dialog-actions>
+    <button mat-raised-button (click)="close()">Cancel</button>
+</mat-dialog-actions>
