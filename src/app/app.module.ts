@@ -13,6 +13,9 @@ import {MatDialogModule} from '@angular/material/dialog';
 import { ModalService } from './features/main/services/modal.service';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatButtonModule} from '@angular/material/button';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatAutocompleteModule} from '@angular/material/autocomplete';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -29,7 +32,11 @@ import {MatButtonModule} from '@angular/material/button';
     MatPaginatorModule,
     MatProgressSpinnerModule,
     MatDialogModule,
-    MatButtonModule
+    MatButtonModule,
+    MatToolbarModule,
+    FormsModule,
+    MatAutocompleteModule,
+    ReactiveFormsModule
   ],
   providers: [ModalService],
   bootstrap: [AppComponent],

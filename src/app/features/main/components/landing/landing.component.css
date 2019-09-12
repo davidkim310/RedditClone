@@ -1,6 +1,6 @@
 /* img { width: 40px; height: 40px; } */
 .itemTitle {
-    padding-left: 20px !important;
+    padding-left: 10px !important;
 }
 .loading-indicator {
     position: fixed;
@@ -29,6 +29,21 @@
     justify-content: flex-end;
     margin-right: 25px;
 }
+
+.table {
+    justify-content: center !important;
+    align-items: center !important;
+}
 .tableStyle {
-    width: 100% !important;
+    max-width: 1024px !important;
+}
+.wrapContainer {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+.subContainer {
+    justify-content: center !important;
+    align-items: center !important;
+    max-width: 1024px !important;
 }
